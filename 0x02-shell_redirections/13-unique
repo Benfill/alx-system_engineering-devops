@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | uniq -c | grep -e '^\s.*1\s' | tr -d '[:digit:]'
+sort | uniq -c | grep -e '^\s.*1\s' | tr -d '[:digit:]' | tr -d '[:blank:]'
